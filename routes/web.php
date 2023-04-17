@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,19 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\ProductsController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create']);
 
-Route::get('/contatos', function () {
-    return view('/contact');
-});
+Route::get('/contatos',[ContactController::class, "index"]);
 
-Route::get('/produtos', function () {
-    $busca = request('search');
-
-    return view('/products', ['busca' => $busca]);
-});
+Route::get('/produtos', [ProductsController::class, "index"]);
 
 Route::get('/produtos_teste/{id?}', function ($id = null) {
     return view('/product',  ['id' => $id]);

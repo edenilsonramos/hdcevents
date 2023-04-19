@@ -1,3 +1,30 @@
 *{
     font-family: 'Roboto';
 }
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;    
+}
+header{
+    background-color: #FFF;
+    border-bottom: 1px solid #CCC;
+}
+.row{
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+
+.btn-primary{
+    background-color: #F2A340;
+    border: 2px solid #c28008;
+}
+.btn-primary:hover{
+    background-color: #c28008;
+    border-color: #c28008;
+}
+#navbar img {
+    width: 40px;
+}

@@ -19,7 +19,7 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="collapse navbar-collapse" id="navbarppog">
+                <div class="collapse navbar-collapse" id="navbar">
                     <a href="/" class="navbar-brand">
                         <img src="/img/hdcevents_logo.svg" alt="HDC Events">
                     </a>
@@ -41,11 +41,11 @@
                 </div>
             </nav>
         </header>
-        @yield('content')
-    <footer>   
-        <p>HDC Events &copy; 2023 </p>
-    </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            @yield('content')
+        <footer>   
+            <p>HDC Events &copy; 2023 </p>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

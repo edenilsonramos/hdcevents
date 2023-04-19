@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use app\Models\Event;
 class EventController extends Controller
 {
     public function index(){
-        $nome = "Edenilson";
-        return view('welcome', ['nome' => $nome]);
+
+        $events = Event::all();
+        return view('welcome', ['events' => $events]);
     }
     public function create(){
         return view('events.create');
